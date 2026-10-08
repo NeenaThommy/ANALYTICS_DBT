@@ -1,0 +1,23 @@
+version: 2
+sources:
+  - name: tpch
+    description: 'tpch sample data hosted in snowflake'
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: customer
+        description: 'customer master table'
+      - name: lineitem
+        description: 'individual line present in the order'
+      - name: nation
+        description: 'nation master data'
+      - name: orders
+        description: 'transaction table present at order granularity'
+      - name: part
+        description: 'item parts master data'
+      - name: partsupp
+        description: 'parts supplied and their metadata'
+      - name: region
+        description: 'region master table'
+      - name: supplier
+        description: 'supplier master table'
