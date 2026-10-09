@@ -1,6 +1,6 @@
 -- models/staging/stg_orders.sql
 with source as (
-    select * from {{ source('tpch', 'ORDERS') }}
+    select * from {{ source('tpch', 'orders') }}
 ),
 renamed as (
     select

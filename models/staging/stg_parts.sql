@@ -1,6 +1,6 @@
 -- models/staging/stg_parts.sql
 with source as (
-    select * from {{ source('tpch', 'PART') }}
+    select * from {{ source('tpch', 'part') }}
 ),
 renamed as (
     select

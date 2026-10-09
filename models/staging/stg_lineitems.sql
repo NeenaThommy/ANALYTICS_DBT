@@ -1,6 +1,6 @@
 -- models/staging/stg_lineitems.sql
 with source as (
-    select * from {{ source('tpch', 'LINEITEM') }}
+    select * from {{ source('tpch', 'lineitem') }}
 ),
 renamed as (
     select

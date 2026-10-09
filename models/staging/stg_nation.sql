@@ -1,5 +1,5 @@
 -- models/staging/stg_nations.sql
-with source as (select * from {{ source('tpch', 'NATION') }})
+with source as (select * from {{ source('tpch', 'nation') }})
 select
     N_NATIONKEY as nation_key,
     N_NAME      as nation_name,

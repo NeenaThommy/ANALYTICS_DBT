@@ -1,5 +1,5 @@
 -- models/staging/stg_regions.sql
-with source as (select * from {{ source('tpch', 'REGION') }})
+with source as (select * from {{ source('tpch', 'region') }})
 select
     R_REGIONKEY as region_key,
     R_NAME      as region_name,
